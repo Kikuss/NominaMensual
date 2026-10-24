@@ -1,0 +1,24 @@
+EXPLICACIÓN DEL PROYECTO - NÓMINA MENSUAL
+
+Este programa permite registrar empleados, calcular su pago mensual y mostrar un reporte con el total de la nómina.
+
+1. Clases y herencia:
+Se creó la clase Empleado y dos clases que heredan de ella: EmpleadoFijo y EmpleadoPorHora. Cada una calcula el pago de diferente manera.
+
+2. Encapsulamiento:
+Los datos de los empleados son privados y se pueden consultar mediante métodos get.
+
+3. Abstracción y polimorfismo:
+La clase Empleado es abstracta. El método calcularPago() se utiliza en los dos tipos de empleados, pero cada uno realiza su propio cálculo.
+
+4. Arreglo de meses:
+Se utiliza String[] meses para guardar los nombres de los doce meses. Con meses[numeroMes - 1] se muestra el mes que seleccionó el usuario.
+
+5. ArrayList:
+Se utiliza ArrayList<Empleado> para guardar los empleados. El método add() agrega empleados, size() cuenta cuántos hay y el recorrido con for permite mostrar sus datos y sumar los pagos.
+
+6. Parámetros y argumentos:
+En el constructor de EmpleadoFijo, dpi, nombre, sueldoMensual y bonificacion son parámetros. Los valores que se envían al crear un empleado son los argumentos.
+
+7. Validaciones:
+El programa verifica que el mes y las opciones sean correctos, que el DPI tenga 13 dígitos, que el nombre no esté vacío y que los valores de pago no sean negativos.
